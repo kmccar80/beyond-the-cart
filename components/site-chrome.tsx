@@ -8,7 +8,9 @@ export function SiteHeader() {
           <span className="mark" aria-hidden="true">
             <ShoppingBasket size={25} />
           </span>
-          <span className="wordmark">fill the caddy</span>
+          <span className="wordmark">
+            fill the caddy<sup className="trademark">™</sup>
+          </span>
         </a>
         <nav aria-label="Main navigation">
           <a href="#categories">Find essentials</a>

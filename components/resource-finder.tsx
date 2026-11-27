@@ -25,7 +25,7 @@ export function ResourceFinder() {
             <span className="eyebrow">
               <Compass size={15} /> COMMUNITY ESSENTIALS FINDER
             </span>
-            <h1>A little help to fill the caddy.</h1>
+            <h1>Everyday essentials, closer to home.</h1>
             <p>
               Find free and low-cost resources for the everyday essentials your SNAP benefits
               don’t cover.

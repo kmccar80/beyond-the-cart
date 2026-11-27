@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Fill the Caddy | Find everyday essentials',
+  title: 'Fill the Caddy™ | Find everyday essentials',
   description:
     'Find support for diapers, hygiene products, household supplies, and pet care beyond SNAP benefits.',
   icons: { icon: '/basket.svg' },

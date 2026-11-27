@@ -10,7 +10,9 @@ export default function Page() {
         <SupportInfo />
       </main>
       <footer className="wrap">
-        <span className="footer-brand">fill the caddy</span>
+        <span className="footer-brand">
+          fill the caddy<sup className="trademark">™</sup>
+        </span>
         <span>Independent community essentials guide</span>
       </footer>
     </>

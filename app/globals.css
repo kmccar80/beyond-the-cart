@@ -120,6 +120,17 @@ nav,
   text-shadow: 1.5px 1.5px 0 var(--clay-soft), 3px 3px 0 var(--blue-soft);
 }
 
+.trademark {
+  position: relative;
+  top: -0.35em;
+  margin-left: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.38em;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-shadow: none;
+}
+
 nav {
   gap: 32px;
   margin-left: auto;
