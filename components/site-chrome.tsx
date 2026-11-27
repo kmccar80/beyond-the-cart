@@ -12,8 +12,8 @@ export function SiteHeader() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#categories">Find essentials</a>
-          <a href="#ride">Get a ride</a>
           <a href="#guide">SNAP guide</a>
+          <a href="#about">About</a>
         </nav>
         <a className="helpline" href="tel:211">
           <Phone size={15} /> Call 211

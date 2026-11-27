@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useState } from 'react'
-import { ArrowRight, ArrowUpRight, CarFront, Compass, MapPin, Search, X } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, Compass, MapPin, Search, X } from 'lucide-react'
 import { HolidayGiving } from './holiday-giving'
 import { categories } from '@/lib/resources'
 
@@ -77,25 +77,6 @@ export function ResourceFinder() {
 
       <HolidayGiving />
 
-      <aside className="ride-help" id="ride">
-        <div className="wrap ride-row">
-          <span className="ride-icon" aria-hidden="true">
-            <CarFront size={27} />
-          </span>
-          <div className="ride-copy">
-            <span className="kicker">TRANSPORTATION HELP</span>
-            <h2>Need a ride to pick up essentials?</h2>
-            <p>
-              Your local 211 can help you look for free and low-cost transportation options
-              available in your area.
-            </p>
-          </div>
-          <a className="ride-link" href="https://www.211.org/about-us/your-local-211">
-            Find transportation help <ArrowUpRight size={16} />
-          </a>
-        </div>
-      </aside>
-
       <section className="wrap directory" id="categories">
         <span className="kicker"><i /> RESOURCE DIRECTORY</span>
         <div className="sectionhead">
@@ -150,13 +131,10 @@ export function ResourceFinder() {
             <div className="localresult">
               <MapPin size={22} />
               <div>
-                <strong>Start with your local 211</strong>
-                <p>
-                  Ask for basic-needs programs near {location}, including supply closets,
-                  diaper banks, and hygiene programs.
-                </p>
-                <a href="https://www.211.org/about-us/your-local-211">
-                  Find your local 211 <ArrowUpRight size={15} />
+                <strong>Search your neighborhood</strong>
+                <p>See programs listed for your ZIP code on Findhelp.</p>
+                <a href={`https://www.findhelp.org/search_results/${location}`}>
+                  Find local programs <ArrowUpRight size={15} />
                 </a>
               </div>
             </div>
