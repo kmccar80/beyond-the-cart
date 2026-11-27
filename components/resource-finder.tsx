@@ -92,7 +92,6 @@ export function ResourceFinder() {
               key={category.name}
               onClick={() => open(index)}
             >
-              <span className="card-number">0{index + 1}</span>
               <img
                 src={`/category-${index}.webp`}
                 alt=""
