@@ -212,6 +212,16 @@ h1 {
   line-height: 0.98;
 }
 
+.hero-title {
+  font-size: clamp(44px, 4.7vw, 72px);
+  letter-spacing: -0.055em;
+  line-height: 1.04;
+}
+
+.hero-title span {
+  display: block;
+}
+
 .herocopy > p {
   max-width: 520px;
   color: var(--muted);
@@ -782,6 +792,11 @@ body:has(dialog[open]) {
   h1 {
     margin: 18px 0 14px;
     font-size: clamp(45px, 12vw, 66px);
+  }
+
+  .hero-title {
+    font-size: clamp(36px, 10vw, 52px);
+    line-height: 1.06;
   }
 
   form {
