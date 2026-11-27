@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useState } from 'react'
-import { ArrowRight, ArrowUpRight, Compass, MapPin, Search, X } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, CarFront, Compass, MapPin, Search, X } from 'lucide-react'
 import { HolidayGiving } from './holiday-giving'
 import { categories } from '@/lib/resources'
 
@@ -76,6 +76,25 @@ export function ResourceFinder() {
       </section>
 
       <HolidayGiving />
+
+      <aside className="ride-help" id="ride">
+        <div className="wrap ride-row">
+          <span className="ride-icon" aria-hidden="true">
+            <CarFront size={27} />
+          </span>
+          <div className="ride-copy">
+            <span className="kicker">TRANSPORTATION HELP</span>
+            <h2>Need a ride to pick up essentials?</h2>
+            <p>
+              Your local 211 can help you look for free and low-cost transportation options
+              available in your area.
+            </p>
+          </div>
+          <a className="ride-link" href="https://www.211.org/about-us/your-local-211">
+            Find transportation help <ArrowUpRight size={16} />
+          </a>
+        </div>
+      </aside>
 
       <section className="wrap directory" id="categories">
         <span className="kicker"><i /> RESOURCE DIRECTORY</span>

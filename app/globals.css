@@ -388,6 +388,59 @@ button.primary:hover {
   text-underline-offset: 4px;
 }
 
+.ride-help {
+  background: var(--blue-soft);
+  border-bottom: 1px solid #bfd0d1;
+}
+
+.ride-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding-block: 24px;
+}
+
+.ride-icon {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  color: var(--paper);
+  background: var(--ink);
+  border: 2px solid var(--ink-deep);
+  border-radius: 15px 17px 14px 16px;
+  box-shadow: 3px 3px 0 var(--mustard);
+  transform: rotate(-2deg);
+}
+
+.ride-copy h2 {
+  margin: 5px 0 3px;
+  font-size: 24px;
+  letter-spacing: -0.035em;
+}
+
+.ride-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.ride-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 14px;
+  white-space: nowrap;
+  background: var(--white);
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  box-shadow: 3px 3px 0 var(--sky);
+  font-size: 13px;
+  font-weight: 750;
+}
+
 .directory {
   padding: 48px 0 54px;
 }
@@ -850,6 +903,16 @@ body:has(dialog[open]) {
     font-size: 14px;
   }
 
+  .ride-row {
+    grid-template-columns: auto 1fr;
+    gap: 14px;
+  }
+
+  .ride-link {
+    grid-column: 2;
+    justify-self: start;
+  }
+
   footer {
     gap: 15px;
   }
@@ -906,6 +969,19 @@ body:has(dialog[open]) {
 
   .giftrow button {
     font-size: 12px;
+  }
+
+  .ride-row {
+    grid-template-columns: 1fr;
+  }
+
+  .ride-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .ride-link {
+    grid-column: 1;
   }
 
   .sticker-note {
