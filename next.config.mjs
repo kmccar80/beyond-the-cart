@@ -7,6 +7,7 @@ const allowedDevOrigins =
 
 const nextConfig = {
   ...(allowedDevOrigins ? { allowedDevOrigins } : {}),
+  output: 'export',
   typescript: {
     ignoreBuildErrors: true,
   },
