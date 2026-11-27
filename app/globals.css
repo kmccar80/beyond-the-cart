@@ -166,7 +166,7 @@ nav a:hover,
   grid-template-columns: 1.02fr 1fr;
   align-items: center;
   gap: clamp(24px, 4vw, 70px);
-  padding: 60px 0 66px;
+  padding: 40px 0 66px;
 }
 
 .herocopy {
@@ -673,7 +673,7 @@ body:has(dialog[open]) {
 
 @media (min-width: 1450px) {
   .herogrid {
-    padding: 74px 0;
+    padding: 50px 0 74px;
   }
 
   .category {
@@ -755,7 +755,7 @@ body:has(dialog[open]) {
   .herogrid {
     grid-template-columns: 1fr;
     gap: 24px;
-    padding: 36px 0 37px;
+    padding: 27px 0 37px;
   }
 
   .heroart {
